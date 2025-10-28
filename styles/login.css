@@ -1,0 +1,89 @@
+:root {
+  --dark: #1F2937;
+  --gray: #4B5563;
+  --blue: #38BDF8;
+  --white: #FFFFFF;
+  --green: #A7F3D0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--dark);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background-color: var(--white);
+  color: var(--dark);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-container h1 {
+  color: var(--blue);
+  margin-bottom: 1.5rem;
+}
+
+.login-form label {
+  display: block;
+  text-align: left;
+  margin: 0.5rem 0 0.2rem;
+  color: var(--gray);
+  font-weight: 600;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 5px rgba(56,189,248,0.4);
+}
+
+.btn-primary {
+  width: 100%;
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem;
+  margin-top: 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0EA5E9; /* un poco más oscuro */
+}
+
+.register-text {
+  margin-top: 1rem;
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+.register-text a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
